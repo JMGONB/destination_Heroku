@@ -16,3 +16,9 @@ def limit_page():
 # configurar lo que va dentro de PORT es súper importante
 app.run(host='0.0.0.0',port=os.getenv("PORT", 5000), debug=True)
 
+# PORT será por defecto mi local host 5000 pero con getnv se toma el entorno de la nube si nos asigna 
+# un entorno. Ese entorno suistituirá el puerto por defecto 5000 
+
+# Importante es comnprobar que funciona en local antes de subir nada a Heroku.
+
+
